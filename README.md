@@ -1,7 +1,7 @@
-SmallChange (SMC) - a 'faster' version of Litecoin which also uses scrypt
+HayekCoin (HKC) - a another version version of SmallChange (a Litecoin Fork) which also uses scrypt
 as a proof of work scheme and is intended for microtransactions.
- - 15 seconds block targets: beat that MinCoin! ;)
- - 420 699 680 total coins
+ - 2 min block targets: beat that MinCoin! ;)
+ - 100 000 000 total coins
  - no subsidy within the first 3 days and after approximately 5 years;
     in between: 4 coins per generated block
  - difficulty retargets every 0.35 days
