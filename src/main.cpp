@@ -50,7 +50,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "SmallChange Signed Message:\n";
+const string strMessageMagic = "HayekCoin Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -698,7 +698,7 @@ int CMerkleTx::GetBlocksToMaturity() const
 {
     if (!IsCoinBase())
         return 0;
-    return max(0, (COINBASE_MATURITY+10) - GetDepthInMainChain());
+    return max(0, (COINBASE_MATURITY+20) - GetDepthInMainChain());
 }
 
 
@@ -828,19 +828,16 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 4 * COIN;
+    int64 nSubsidy = 100 * COIN;
 
-
-    if(nHeight < 17280) // no block reward within the first 3 days
-        nSubsidy = 0;
-    if(nHeight > 10519200) // no block reward after 5 years
-        nSubsidy = 0;
+-    // Subsidy is cut in half every 420000 blocks, which will occur approximately every 2 years
+-    nSubsidy >>= (nHeight / 420000); // HayekCoin: 420k blocks in ~2 years
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 0.35 * 24 * 60 * 60; // SmallChange: 0.35 days
-static const int64 nTargetSpacing = 15; // SmallChange: 15 seconds
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // HayekCoin: 1 days
+static const int64 nTargetSpacing = 2 * 60; // HayekCoin: 15 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
