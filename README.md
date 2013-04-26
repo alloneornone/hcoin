@@ -1,7 +1,7 @@
 HayekCoin (HKC) - a another version version of SmallChange (a Litecoin Fork) which also uses scrypt
 as a proof of work scheme and is intended for microtransactions.
  - 2 min block targets: beat that MinCoin! ;)
- - 100 000 000 total coins
+ - 853 006 308 total coins
  - 100 Coins per block, subsidy havles every 420,000 blocks
  - difficulty retargets every day
  - currently peers are looked up over IRC only
