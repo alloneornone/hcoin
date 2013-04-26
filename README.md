@@ -2,9 +2,8 @@ HayekCoin (HKC) - a another version version of SmallChange (a Litecoin Fork) whi
 as a proof of work scheme and is intended for microtransactions.
  - 2 min block targets: beat that MinCoin! ;)
  - 100 000 000 total coins
- - no subsidy within the first 3 days and after approximately 5 years;
-    in between: 4 coins per generated block
- - difficulty retargets every 0.35 days
+ - 100 Coins per block, subsidy havles every 420,000 blocks
+ - difficulty retargets every day
  - currently peers are looked up over IRC only
  - currently no block checkpoints are in the code (but could be easily
    added)
@@ -13,7 +12,7 @@ means be used as a real cryptocurrency. All of the coin parameters
 are chosen arbitrarily or at most with 'fairness' towards everyone in mind.
 
 So actually, this 'new' coin exists for the following reasons:
- - SMC proves that really anyone(!) can start a Litecoin/Bitcoin based currency
+ - HKC proves that really anyone(!) can start a Litecoin/Bitcoin based currency
     (just look at the changes I applied to the original Litecoin source,
      for genesis block generation look at main.cpp)
  - allows me to experiment with coin parameters (in a private network)
