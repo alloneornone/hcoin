@@ -24,6 +24,9 @@ created Bitcoin and Litecoin.
 Development process
 ===================
 
+To see the SmallChange litecoin edits I followed to make HayekCoin go here:
+https://github.com/bfroemel/smallchange/commit/947a0fafd8d033f6f0960c4ff0748f76a3d58326
+
 Developers work in their own trees, then submit pull requests when
 they think their feature or bug fix is ready.
 
