@@ -1,5 +1,6 @@
 Copyright (c) 2009-2012 Bitcoin Developers
 Copyright (c) 2011-2012 Litecoin Developers
+Copyright (c) 2013-2014 HayekCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in
@@ -28,7 +29,7 @@ install DVD, but if not, you can get the current version from https://developer.
 
 1.  Clone the github tree to get the source code:
 
-git clone git@github.com:litecoin-project/litecoin.git litecoin
+git clone git@github.org:alexmerced/hcoin.git hcoin
 
 2.  Download and install MacPorts from http://www.macports.org/
 
@@ -42,14 +43,14 @@ sudo port install boost db48 openssl miniupnpc
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build litecoind:
+4.  Now you should be able to build hayekcoind:
 
-cd litecoin/src
+cd hcoin/src
 make -f makefile.osx USE_IPV6=1
 
 Run:
-  ./litecoind --help  # for a list of command-line options.
+  ./hayekcoind --help  # for a list of command-line options.
 Run
-  ./litecoind -daemon # to start the litecoin daemon.
+  ./hayekcoind -daemon # to start the litecoin daemon.
 Run
-  ./litecoind help # When the daemon is running, to get a list of RPC commands
+  ./hayekcoind help # When the daemon is running, to get a list of RPC commands
