@@ -1,4 +1,4 @@
-Litecoin-Qt: Qt4 GUI for Litecoin
+HayekCoin-Qt: Qt4 GUI for HayekCoin
 ================================
 
 Build instructions
@@ -23,9 +23,9 @@ then execute the following:
     qmake
     make
 
-Alternatively, install `Qt Creator`_ and open the `litecoin-qt.pro` file.
+Alternatively, install `Qt Creator`_ and open the `hayekcoin-qt.pro` file.
 
-An executable named `litecoin-qt` will be built.
+An executable named `-qt` will be built.
 
 .. _`Qt Creator`: http://qt.nokia.com/downloads/
 
