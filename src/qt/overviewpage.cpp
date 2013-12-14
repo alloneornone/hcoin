@@ -176,7 +176,7 @@ void OverviewPage::setModel(WalletModel *model)
     }
 
     // update the display unit, to not use the default ("HKC")
-    updateDisplayUnit();
+    updateDisplayUnit(HKC);
 }
 
 void OverviewPage::updateDisplayUnit()
